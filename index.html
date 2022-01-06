@@ -5,92 +5,80 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculator</title>
-  <link href="reset.css" rel="stylesheet" type="text/css">
-  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="/reset.css" rel="stylesheet" type="text/css">
+  <!-- href 절대 경로로 작성하기 -->
+  <link href="/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <div class="container">
-    <div class="calculator">
+    <section class="calculator">
       <div class="result">
         <input readonly type="text" class="total">
         <input readonly type="text" class="calculation">
+        <!-- hover focus  -->
+        <!-- css border & outline & margin 수정 -->
       </div>
 
       <div class="buttons">
-        <div class="button_1st">
-          <button type="button" class="AC">AC</button>
-          <button type="button" class="BS">Back</button>
-          <button type="button" class="operator">÷</button>
+        <div class="button__1st">
+          <button type="button" class="btn all-clear">AC</button>
+          <button type="button" class="btn backspace">Back</button>
+          <button type="button" class="btn operator">÷</button>
         </div>
 
-        <div class="button_2nd">
-          <button type="button" class="number">7</button>
-          <button type="button" class="number">8</button>
-          <button type="button" class="number">9</button>
-          <button type="button" class="operator">×</button>
+        <div class="button__2nd">
+          <button type="button" class="btn number">7</button>
+          <button type="button" class="btn number">8</button>
+          <button type="button" class="btn number">9</button>
+          <button type="button" class="btn operator">×</button>
         </div>
 
-        <div class="button_3rd">
-          <button type="button" class="number">4</button>
-          <button type="button" class="number">5</button>
-          <button type="button" class="number">6</button>
-          <button type="button" class="operator">-</button>
+        <div class="button__3rd">
+          <button type="button" class="btn number">4</button>
+          <button type="button" class="btn number">5</button>
+          <button type="button" class="btn number">6</button>
+          <button type="button" class="btn operator">-</button>
         </div>
 
-        <div class="button_4th">
-          <button type="button" class="number">1</button>
-          <button type="button" class="number">2</button>
-          <button type="button" class="number">3</button>
-          <button type="button" class="operator">+</button>
+        <div class="button__4th">
+          <button type="button" class="btn number">1</button>
+          <button type="button" class="btn number">2</button>
+          <button type="button" class="btn number">3</button>
+          <button type="button" class="btn operator">+</button>
         </div>
 
-        <div class="button_5th">
-          <button type="button" class="number">0</button>
-          <button type="button" class="dot">.</button>
-          <button type="button" class="enter">=</button>
+        <div class="button__5th">
+          <button type="button" class="btn number">0</button>
+          <button type="button" class="btn dot">.</button>
+          <button type="button" class="btn oprator">=</button>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="calculator_log">
-      <div class="iconwrap_top">
-        <div class="wrap_box">
-          <button type="button" class="daynight">
+    <section class="calculator-log">
+      <section class="iconwrap-top">
+        <div class="wrap-box">
+          <button type="button" class="btn darkmode">
             <img src="img/daynight_icon.png" alt="">
           </button>
-          <button type="button" class="responsive">
+          <button type="button" class="btn res">
             <img src="img/responsive_icon.png" alt="">
           </button>
         </div>
-      </div>
-
-      <!--  
-      list는 아래와 같이 짜는게 좋을까요? 다른 좋은 방법이 있을까요? 
-      <div class="calculator_list">
-        <div class="wrap_box">
-          <ul>
-            <li class="list_1"></li>
-            <li class="list_2"></li>
-            <li class="list_3"></li>
-            <li class="list_4"></li>
-            <li class="list_5"></li>
-            <li class="list_6"></li>
-            <li class="list_7"></li>
-            <li class="list_8"></li>
-            <li class="list_9"></li>
-            <li class="list_10"></li>
-          </ul>
-        </div>
-      </div>
-    -->
-      <div class="iconwrap_bottom">
-        <div class="wrap_box">
-          <button type="button" class="trash">
+      </section>
+      <section>
+        <ul class="pre-list"></ul>
+      </section>
+      <section class="iconwrap-bottom">
+        <div class="wrap-box">
+          <button type="button" class="btn trash">
             <img src="img/trash_icon.png" alt="">
           </button>
         </div>
-      </div>
-    </div>
+      </section>
+    </section>
   </div>
 </body>
 </html>
+
+<!-- 빨리하면  -->
