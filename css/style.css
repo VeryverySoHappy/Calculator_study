@@ -1,0 +1,115 @@
+body {
+  background: linear-gradient(#6667ab 0%, #1f0937 60%, #635474 80%);
+  margin: 0;
+}
+button {
+  font-size: 24px;
+  color: #fff;
+} 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container section.calculator {
+  background: linear-gradient( rgba(102, 103, 171, 0), rgba(102, 103, 171, 100%) 75%);
+  width : 432px;
+  height : 768px;
+  position: relative;
+  border-radius: 20px;
+}
+.container section.calculator .result{
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin-top: 80px;
+  padding: 0;
+  border-width: 0;
+  /* padding: 0;
+  border-width: 0; 
+  이 두개 꼭 해줘야되는지*/
+}
+.container section.calculator .result input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 350px;
+  margin-top: 50px;
+  text-align: right;
+  color: #fff;
+}
+
+#total {
+  width: ;
+  height: ;
+  font-size: 21px;
+}
+#calculation {
+  font-size: 36px;
+}
+
+.buttons {
+  position: absolute;
+  width : 320px;
+  height : 370px;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%);
+  border: 1px solid red;
+  transition: all .3s;
+}
+.buttons .button__1st .btn,
+.buttons .button__2nd .btn,
+.buttons .button__3rd .btn,
+.buttons .button__4th .btn,
+.buttons .button__5th .btn:nth-child(2),
+.buttons .button__5th .btn:nth-child(3){
+  background:radial-gradient(rgba(102, 103, 171, 100), rgba(102, 103, 171, 0) 60%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.buttons .button__5th .number {
+  width: 100px;
+  height: 45px;
+  background-color:transparent;
+  border: 3px solid #fff;
+  border-radius: 30px;
+}
+
+.buttons .button__1st .btn:hover,
+.buttons .button__2nd .btn:hover,
+.buttons .button__3rd .btn:hover,
+.buttons .button__4th .btn:hover,
+.buttons .button__5th .btn:nth-child(2):hover,
+.buttons .button__5th .btn:nth-child(3):hover {
+  background: radial-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 70) 60%);
+  transition: all .3s;
+}
+
+.buttons .button__5th .number:hover {
+  background: #fff;
+  border: 1px solid #fff;
+  color: #000;
+}
+
+.buttons .button__1st button:active,
+.buttons .button__2nd button:active,
+.buttons .button__3rd button:active,
+.buttons .button__4th button:active,
+.buttons .button__5th .btn:nth-child(2):active,
+.buttons .button__5th .btn:nth-child(3):active {
+}
+
+.buttons .button__5th .number:active {
+
+}
+section.calculator-log {
+}
+section.calculator-log section.iconwrap-top {}
+section.calculator-log section.iconwrap-top .wrap-box{}
