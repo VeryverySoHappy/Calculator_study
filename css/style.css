@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(#6667ab 0%, #1f0937 60%, #635474 80%);
+  background: linear-gradient(#6667ab, #1f0937);
   margin: 0;
 }
 button {
@@ -13,7 +13,7 @@ button {
   height: 100vh;
 }
 .container section.calculator {
-  background: linear-gradient( rgba(102, 103, 171, 0), rgba(102, 103, 171, 100%) 75%);
+  background: linear-gradient(#6667ab, #1f0937);
   width : 432px;
   height : 768px;
   position: relative;
@@ -42,8 +42,6 @@ button {
 }
 
 #total {
-  width: ;
-  height: ;
   font-size: 21px;
 }
 #calculation {
@@ -57,9 +55,22 @@ button {
   bottom: 50px;
   left: 50%;
   transform: translate(-50%);
-  border: 1px solid red;
   transition: all .3s;
 }
+
+.buttons .button__1st .btn {
+  margin: 0px 20px;
+}
+
+.buttons .button__2nd .btn,
+.buttons .button__3rd .btn,
+.buttons .button__4th .btn {
+margin: 7px 7px;
+}
+.buttons .button__5th .btn{
+  margin: 0px 12px;
+}
+
 .buttons .button__1st .btn,
 .buttons .button__2nd .btn,
 .buttons .button__3rd .btn,

@@ -21,9 +21,9 @@
 <!-- - (기본 / hover) : border : 3px solid #ffffff -->
 - (active) : white solid #ffffff(opacity : 100%)
 
-글자 사이즈
+<!-- 글자 사이즈
 - 전체식 : 21pt
-- 결과값 : 36pt
+- 결과값 : 36pt -->
 <!-- - 버튼 내부 숫자 폰트 사이즈 : 24pt -->
 - 버튼 가운데에 폰트 정렬
 
