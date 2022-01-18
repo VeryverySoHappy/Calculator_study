@@ -2,10 +2,6 @@ body {
   background: linear-gradient(#6667ab, #1f0937);
   margin: 0;
 }
-button {
-  font-size: 24px;
-  color: #fff;
-} 
 .container {
   display: flex;
   justify-content: center;
@@ -13,7 +9,7 @@ button {
   height: 100vh;
 }
 .container section.calculator {
-  background: linear-gradient(#6667ab, #1f0937);
+  background: linear-gradient(#6667ab, #1f0937 50%);
   width : 432px;
   height : 768px;
   position: relative;
@@ -57,32 +53,50 @@ button {
   transform: translate(-50%);
   transition: all .3s;
 }
-
+button {
+  font-size: 24px;
+  color: #fff;
+} 
 .buttons .button__1st .btn {
-  margin: 0px 20px;
+  margin-left: 2.4rem;
 }
 
 .buttons .button__2nd .btn,
 .buttons .button__3rd .btn,
 .buttons .button__4th .btn {
-margin: 7px 7px;
+  margin: 7px 7px;
 }
 .buttons .button__5th .btn{
-  margin: 0px 12px;
+  margin-left: 1.5rem;
+  /* margin-left: 25px; */
+  /* transition: all 1s; */
+  
 }
 
+/* 모든 버튼 커스컴 */
 .buttons .button__1st .btn,
 .buttons .button__2nd .btn,
 .buttons .button__3rd .btn,
 .buttons .button__4th .btn,
 .buttons .button__5th .btn:nth-child(2),
 .buttons .button__5th .btn:nth-child(3){
-  background:radial-gradient(rgba(102, 103, 171, 100), rgba(102, 103, 171, 0) 60%);
+  background:radial-gradient(rgba(102, 103, 171, 1), rgba(102, 103, 171, 0) 60%);
   width: 60px;
   height: 60px;
-  border-radius: 50%;
+  border-radius: 100%;
   border: none;
-  cursor: pointer;
+  cursor: pointer; 
+}
+
+/* 모든 버튼 호버 커스텀 */
+.buttons .button__1st .btn:hover,
+.buttons .button__2nd .btn:hover,
+.buttons .button__3rd .btn:hover,
+.buttons .button__4th .btn:hover,
+.buttons .button__5th .btn:nth-child(2):hover,
+.buttons .button__5th .btn:nth-child(3):hover {
+  background: radial-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 60%);
+  /* color: #000; */
 }
 
 .buttons .button__5th .number {
@@ -91,36 +105,60 @@ margin: 7px 7px;
   background-color:transparent;
   border: 3px solid #fff;
   border-radius: 30px;
-}
-
-.buttons .button__1st .btn:hover,
-.buttons .button__2nd .btn:hover,
-.buttons .button__3rd .btn:hover,
-.buttons .button__4th .btn:hover,
-.buttons .button__5th .btn:nth-child(2):hover,
-.buttons .button__5th .btn:nth-child(3):hover {
-  background: radial-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 70) 60%);
-  transition: all .3s;
+  transition: all 1s;
+  cursor: pointer;
 }
 
 .buttons .button__5th .number:hover {
   background: #fff;
   border: 1px solid #fff;
   color: #000;
+  transition: all 1s;
 }
 
-.buttons .button__1st button:active,
-.buttons .button__2nd button:active,
-.buttons .button__3rd button:active,
-.buttons .button__4th button:active,
+.buttons .button__1st .btn:active,
+.buttons .button__2nd .btn:active,
+.buttons .button__3rd .btn:active,
+.buttons .button__4th .btn:active,
 .buttons .button__5th .btn:nth-child(2):active,
 .buttons .button__5th .btn:nth-child(3):active {
+  background: #fff;
+  color: #1f0937;
 }
 
 .buttons .button__5th .number:active {
-
+  background: #fff;
+  color: #1f0937;
 }
 section.calculator-log {
+  width: 582px;
+  height: 768px;
+  background: linear-gradient(#6667ab, #1f0937 50%, #222 90%);
+  border-radius: 20px;
+  position: relative;
 }
-section.calculator-log section.iconwrap-top {}
-section.calculator-log section.iconwrap-top .wrap-box{}
+section.calculator-log section.iconwrap-top {
+  position: absolute;
+  top: 4%;
+  left: 65%;
+}
+.wrap-box button {
+  background-color:transparent;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+}
+ul.pre-list {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  color: #fff;
+  font-size: 24px;
+  line-height: 2em;
+}
+.iconwrap-bottom {
+  position: absolute;
+  bottom: 4%;
+  left: 82%;
+}
+

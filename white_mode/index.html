@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+  <!-- href 절대 경로로 작성하기 -->
+  <link href="./css/style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+  <div class="container">
+    <section class="calculator">
+      <div class="result">
+        <input readonly type="text" id="total" value="0">
+        <input readonly type="text" id="calculation" value="0">
+        <!-- hover focus  -->
+        <!-- css border & outline & margin 수정 -->
+      </div>
+
+      <div class="buttons">
+        <div class="button__1st">
+          <button type="button" class="btn all-clear">AC</button>
+          <button type="button" class="btn backspace">Back</button>
+          <button type="button" class="btn operator">÷</button>
+        </div>
+
+        <div class="button__2nd">
+          <button type="button" class="btn number">7</button>
+          <button type="button" class="btn number">8</button>
+          <button type="button" class="btn number">9</button>
+          <button type="button" class="btn operator">x</button>
+        </div>
+
+        <div class="button__3rd">
+          <button type="button" class="btn number">4</button>
+          <button type="button" class="btn number">5</button>
+          <button type="button" class="btn number">6</button>
+          <button type="button" class="btn operator">-</button>
+        </div>
+
+        <div class="button__4th">
+          <button type="button" class="btn number">1</button>
+          <button type="button" class="btn number">2</button>
+          <button type="button" class="btn number">3</button>
+          <button type="button" class="btn operator">+</button>
+        </div>
+
+        <div class="button__5th">
+          <button type="button" class="btn number">0</button>
+          <button type="button" class="btn dot">.</button>
+          <button type="button" class="btn operator">=</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- <section class="calculator-log">
+      <section class="iconwrap-top">
+        <div class="wrap-box">
+          <button type="button" class="btn darkmode">
+            <i class="fas fa-cloud-moon"></i>
+          </button>
+          <button type="button" class="btn res">
+            <i class="fas fa-share-square"></i>
+          </button>
+        </div>
+      </section>
+      <section>
+        <ul class="pre-list"></ul>
+      </section>
+      <section class="iconwrap-bottom">
+        <div class="wrap-box">
+          <button type="button" class="btn trash">
+            <i class="fas fa-trash-alt"></i>
+          </button>
+        </div>
+      </section>
+    </section>  -->
+  </div>
+</body>
+</html>

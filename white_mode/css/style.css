@@ -1,11 +1,7 @@
 body {
-  background: linear-gradient(#6667ab, #1f0937);
+  background: linear-gradient(#fff 60%, #E087B5);
   margin: 0;
 }
-button {
-  font-size: 24px;
-  color: #fff;
-} 
 .container {
   display: flex;
   justify-content: center;
@@ -13,7 +9,7 @@ button {
   height: 100vh;
 }
 .container section.calculator {
-  background: linear-gradient(#6667ab, #1f0937 50%);
+  background: linear-gradient(255,255,255);
   width : 432px;
   height : 768px;
   position: relative;
@@ -57,7 +53,10 @@ button {
   transform: translate(-50%);
   transition: all .3s;
 }
-
+button {
+  font-size: 24px;
+  color: #fff;
+} 
 .buttons .button__1st .btn {
   margin-left: 2.4rem;
 }
@@ -81,7 +80,7 @@ button {
 .buttons .button__4th .btn,
 .buttons .button__5th .btn:nth-child(2),
 .buttons .button__5th .btn:nth-child(3){
-  background:radial-gradient(rgba(102, 103, 171, 1), rgba(102, 103, 171, 0) 60%);
+  background:radial-gradient(rgb(226,192,190, 1), rgba(255, 255, 255, 0) 60%);
   width: 60px;
   height: 60px;
   border-radius: 100%;
@@ -96,18 +95,23 @@ button {
 .buttons .button__4th .btn:hover,
 .buttons .button__5th .btn:nth-child(2):hover,
 .buttons .button__5th .btn:nth-child(3):hover {
-  background: radial-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 60%);
+  background: radial-gradient(rgba(244, 135, 180, 0.45) 0%, rgba(226, 192, 190, 0.45) 40%);
   /* color: #000; */
 }
 
 .buttons .button__5th .number {
   width: 100px;
-  height: 45px;
+  /* height: 45px;
   background-color:transparent;
   border: 3px solid #fff;
   border-radius: 30px;
   transition: all 1s;
-  cursor: pointer;
+  cursor: pointer; */
+  .top { border-image-width: 20px 0 0 0; }
+  .bottom { border-image-width: 0 0 0 20px; }
+  .left { border-image-width: 0 0 20px 0; }
+  .right { border-image-width: 0 20px 0 0; }
+  .all { border-image-width: 20px; }
 }
 
 .buttons .button__5th .number:hover {
@@ -123,9 +127,13 @@ button {
 .buttons .button__4th .btn:active,
 .buttons .button__5th .btn:nth-child(2):active,
 .buttons .button__5th .btn:nth-child(3):active {
-  background: #fff;
-  color: #1f0937;
-}
+  background:
+      linear-gradient(190deg, rgb(255,243,180), rgb(0,0,0,0) 70.71%),
+      linear-gradient(230deg, rgb(224,135,181,1), rgba(128, 128, 128, 0) 70.71%),
+      linear-gradient(365deg, rgb(102,103,171), rgba(128, 128, 128, 0) 70.71%);  
+      color: #1f0937;
+} 
+
 
 .buttons .button__5th .number:active {
   background: #fff;
